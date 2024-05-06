@@ -1,0 +1,131 @@
+.template_name{
+  text-align: center;
+}
+
+.container_theme{
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.theme_text{
+  font-size: 23px;
+  border: 2px solid black;
+  border-radius: 6px;
+  resize: none;
+  width: 100%;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 1em;
+}
+
+.item{
+  grid-row: 100px;
+  text-align: center;
+}
+
+/*各色のテキストエリアの設定*/
+.white{
+  border: 2px solid rgb(197, 197, 197);
+  border-radius: 6px;
+  outline: none;
+  font-size:16px;
+  resize: none;
+}
+
+.red{
+  border: 2px solid red;
+  border-radius: 6px;
+  outline: none;
+  font-size:16px;
+  resize: none;
+}
+
+.black{
+  border: 2px solid black;
+  border-radius: 6px;
+  outline: none;
+  font-size:16px;
+  resize: none;
+}
+
+.yellow{
+  border: 2px solid yellow;
+  border-radius: 6px;
+  outline: none;
+  font-size:16px;
+  resize: none;
+}
+
+.green{
+  border: 2px solid green;
+  border-radius: 6px;
+  outline: none;
+  font-size:16px;
+  resize: none;
+}
+
+.blue{
+  border: 2px solid blue;
+  border-radius: 6px;
+  outline: none;
+  font-size:16px;
+  resize: none;
+}
+
+/*button*/
+
+.button_container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.create_button{
+  color: #fff;
+  border-top: 4px solid #48ecc4;
+  border-right: 4px solid #0a5f4a;
+  border-bottom: 4px solid #0f745b;
+  border-left: 4px solid #8cf9de;
+  border-radius: 0;
+  background: #11a37f;
+  width: 150px;
+  height: 75px;
+}
+
+.create_button:hover{
+  color: #fff;
+  border-top: 4px solid #0f745b;
+  border-right: 4px solid #8cf9de;
+  border-bottom: 4px solid #48ecc4;
+  border-left: 4px solid #0a5f4a;
+}
+
+.back_button{
+  color: #fff;
+  border-top: 4px solid rgb(238, 66, 66);
+  border-right: 4px solid rgb(121, 10, 10);
+  border-bottom: 4px solid rgb(134, 24, 24);
+  border-left: 4px solid rgb(245, 136, 136);
+  border-radius: 0;
+  background: rgb(168, 15, 15);
+  width: 150px;
+  height: 75px;
+}
+
+.back_button:hover{
+  color: #fff;
+  border-top: 4px solid rgb(134, 24, 24);
+  border-right: 4px solid rgb(245, 136, 136);
+  border-bottom: 4px solid rgb(238, 66, 66);
+  border-left: 4px solid rgb(121, 10, 10);
+}
+
+.back_link{
+  color: inherit;
+  text-decoration: none;
+  font-size: 20px;
+}
