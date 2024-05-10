@@ -1,0 +1,48 @@
+.template_choice{
+  text-align: center;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 1em;
+}
+
+.item{
+  grid-row: 100px;
+  text-align: center;
+}
+
+.sixhat{
+  border: 2px solid gray ;
+  border-radius: 6px;
+  outline: none;
+  font-size:16px;
+  resize: none;
+}
+
+.mandala{
+  border: 2px solid gray ;
+  border-radius: 6px;
+  outline: none;
+  font-size:16px;
+  resize: none;
+}
+
+.sixw2h{
+  border: 2px solid gray ;
+  border-radius: 6px;
+  outline: none;
+  font-size:16px;
+  resize: none;
+}
+
+.elevatorPitch{
+  border: 2px solid gray ;
+  border-radius: 6px;
+  outline: none;
+  font-size:16px;
+  resize: none;
+}
+
