@@ -29,7 +29,7 @@ const page = () => {
             </div>
             <div className={styles.item}>
               <Link href="/create-elevatorPitch">
-              <Image className={styles.elevatorPitch} src="/elevator.png" alt="6w2hpic" width={450} height={400}></Image>
+              <Image className={styles.elevatorPitch} src="/elevator.png" alt="elevatorpic" width={450} height={400}></Image>
               </Link>
             </div>
         </div>
