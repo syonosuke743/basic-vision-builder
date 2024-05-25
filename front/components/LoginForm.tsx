@@ -4,7 +4,7 @@ import styles from "@/styles/login.module.css"
 const LoginForm = () => {
   return (
     <div className={styles.loginForm}>
-      <form method="post">
+      <form>
         <h2>ログイン</h2>
         <div className={styles.inputGroup}>
           <label htmlFor="username">ユーザー名</label>
