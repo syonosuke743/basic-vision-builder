@@ -1,17 +1,9 @@
-import styles from "@/styles/login.module.css"
-import LoginForm from "@/components/LoginForm";
+import Doshboard from "@/components/Doshboard";
 
-export default function Home() {
-  return (
-    <main>
-      <div className={styles.container}>
-        <div className={styles.description}>
-            <h1>Basic Vision Builderとは</h1>
-            <p>シンプルな操作で、アイデアを思いつくために有用なテンプレートを作成できます。</p>
-            <p>テンプレートを手書きで使いたい場合も、テンプレートを印刷することができます。</p>
-        </div>
-        <LoginForm/>
-    </div>
+export default function Home(){
+  return(
+    <main className="max-w-7xl mx-auto my-12">
+    <Doshboard/>
     </main>
   );
 }
