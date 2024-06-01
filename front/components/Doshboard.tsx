@@ -1,6 +1,12 @@
 "use client"
-import { signIn, useSession } from 'next-auth/react'
+import { signIn, signOut, useSession } from 'next-auth/react'
 import React from 'react'
+
+const Image = ({ src }: { src: string }) => (
+  <svg>
+    <image xlinkHref={src} />
+  </svg>
+);
 
 const Doshboard = () => {
 
@@ -10,7 +16,10 @@ const Doshboard = () => {
     <>
       { session ? (
         <>
-        <h1>Welcome back,</h1>
+        <Image src={session.user?.image as string} />
+        <h1>Welcome back, {session.user?.name}</h1>
+        <p>{session.user?.email}</p>
+        <button onClick={() => signOut()} className="border border-black rounded-lg">Sign out with google</button>
         </>
       ):(
         <>
