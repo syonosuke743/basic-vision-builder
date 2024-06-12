@@ -1,9 +1,10 @@
 import { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
-import axios from "axios";
+// import axios from "axios";
+
 
 const apiUrl = process.env.NEXT_PUBLIC_API_URL
-
+//console.log(apiUrl);
 export const authOptions: NextAuthOptions = {
   providers: [
     GoogleProvider({
@@ -17,7 +18,33 @@ export const authOptions: NextAuthOptions = {
       const uid = user?.id;
       const name = user?.name;
       const email = user?.email;
-      try {
+      console.log("-------------------------------------------------------")
+      console.log(provider,uid,name,email)
+      console.log("-------------------------------------------------------")
+      //fetchで確認してaxiosのエラーかの確認
+    try {
+      const response = await fetch(`${apiUrl}/auth/${provider}/callback`, {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+      provider,
+      uid,
+      name,
+      email,
+      })
+      });
+      if (response.ok) {
+      return true;
+      } else {
+        return false;
+      }
+        } catch (error) {
+            console.log("エラー", error);
+              return false;
+          }
+      /*try {
         const response = await axios.post(
           `${apiUrl}/auth/${provider}/callback`,{
             provider,
@@ -32,9 +59,10 @@ export const authOptions: NextAuthOptions = {
           return false;
         }
       } catch (error) {
-        console.log("エラー","error");
+        console.log("エラー",error);
         return false;
-      }
+      }*/
     },
   },
 }
+
