@@ -1,4 +1,3 @@
-
 default: &default
   adapter: postgresql
   encoding: unicode
@@ -10,16 +9,14 @@ default: &default
 
 development:
   <<: *default
-  database: app_development
-  host: db # Docker Composeで定義されたデータベースサービス名に設定
 
 test:
   <<: *default
   database: app_test
-
 
 production:
   <<: *default
   database: app_production
   username: app
   password: <%= ENV["APP_DATABASE_PASSWORD"] %>
+

@@ -46,7 +46,7 @@ const page = () => {
           <div className={styles.button_container}>
             <Link href="/choice-templates">
               <button className={styles.back_button}>戻る</button>
-           </Link>
+            </Link>
           <button className={styles.create_button}>作成</button>
           </div>
         </form>

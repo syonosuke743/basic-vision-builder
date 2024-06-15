@@ -18,9 +18,9 @@ export const authOptions: NextAuthOptions = {
       const uid = user?.id;
       const name = user?.name;
       const email = user?.email;
-      console.log("-------------------------------------------------------")
-      console.log(provider,uid,name,email)
-      console.log("-------------------------------------------------------")
+      //console.log("-------------------------------------------------------")
+      //console.log(provider,uid,name,email)
+      //console.log("-------------------------------------------------------")
       //fetchで確認してaxiosのエラーかの確認
     try {
       const response = await fetch(`${apiUrl}/auth/${provider}/callback`, {
@@ -40,10 +40,10 @@ export const authOptions: NextAuthOptions = {
       } else {
         return false;
       }
-        } catch (error) {
-            console.log("エラー", error);
-              return false;
-          }
+      } catch (error) {
+          console.log("エラー", error);
+            return false;
+        }
       /*try {
         const response = await axios.post(
           `${apiUrl}/auth/${provider}/callback`,{
