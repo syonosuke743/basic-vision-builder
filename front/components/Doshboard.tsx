@@ -1,34 +1,40 @@
 "use client"
-import { signIn, signOut, useSession } from 'next-auth/react'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import { useSession, signIn } from 'next-auth/react'
+import styles from '@/styles/Login.module.css'
 
-const Image = ({ src }: { src: string }) => (
-  <svg>
-    <image xlinkHref={src} />
-  </svg>
-);
 
 const Doshboard = () => {
-
   const { data: session } = useSession();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (session) {
+      // セッションがある場合、choice-templatesにリダイレクト
+      router.push('/choice-templates');
+    }
+  }, [session, router]);
+
+
 
   return (
     <>
-      { session ? (
-        <>
-        <Image src={session.user?.image as string} />
-        <h1>Welcome back, {session.user?.name}</h1>
-        <p>{session.user?.email}</p>
-        <button onClick={() => signOut()} className="border border-black rounded-lg">Sign out with google</button>
-        </>
-      ):(
-        <>
-        <h1>You're not logged in</h1>
-        <button onClick={() => signIn("google")} className="border border-black rounded-lg">Sign in with google</button>
-        </>
-      )}
-    </>
+    <main className={styles.mainContent}>
+      <div className={styles.leftColumn}>
+        <h1>ようこそBasicVisionBuilderへ</h1>
+        <p>ここではアイデアの発想に有用とされるテンプレートを複数用意しています。</p>
+        <p>また、テンプレートだけを印刷して使うこともできます。</p>
+      </div>
+      <div className={styles.rightColumn}>
+        <button onClick={() => signIn("google")} className={styles.signInButton}>
+          Sign in with google
+        </button>
+      </div>
+    </main>
+  </>
   )
 }
 
 export default Doshboard
+
