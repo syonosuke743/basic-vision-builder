@@ -1,31 +1,58 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import Link from 'next/link'
 import { signOut, useSession } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
+import styles from '@/styles/Header.module.css'
 
-const Image = ({ src }: { src: string }) => (
-  <svg>
-    <image xlinkHref={src} />
-  </svg>
-);
+//image components
+const Image = ({ src }: { src: string }) => {
+  if (!src) {
+    return null;
+  }
+  return (
+    <svg className={styles.image}>
+      <image xlinkHref={src}/>
+    </svg>
+  );
+};
 
 const Header = () => {
-  const { data: session } = useSession();
+  const { data: session, status } = useSession();//ここにuidを含める
+  const router = useRouter();
+
+  //セッションがなければログイン画面に戻す
+  useEffect(() => {
+    console.log(session);
+    console.log(status);
+    if (status === 'unauthenticated') {
+      router.push('/');
+    }
+  }, [status, router]);
+
+  if (status === 'loading') {
+    return <div>Loading...</div>;
+  }
 
   return (
-    <header>
-      <h1>
-        <Link href="/choice-templates">
-          テンプレートの選択
-        </Link>
-      </h1>
+    <header className={styles.container}>
+      <div className={styles.app_title}>Basic vision builder</div>
       {session && (
-        <>
+        <div className={styles.menu}>
+          <div className={styles.choice_templates}>
+          <Link href="/choice-templates">
+            テンプレートの選択
+            </Link>
+          </div>
+          <div className={styles.user_name}>{session.user?.name}さん</div>
           <Image src={session.user?.image as string} />
-          <button onClick={() => signOut()} className="border border-black rounded-lg">Sign out with google</button>
-        </>
+          <button onClick={() => signOut({ callbackUrl: '/' })} className={styles.signout_button}>Sign out</button>
+        </div>
       )}
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
+
+

@@ -23,8 +23,14 @@ module App
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # Set timezone to Tokyo
     config.time_zone = 'Tokyo'
     config.active_record.default_timezone = :local
+
+    # Configure available locales and default locale
+    config.i18n.available_locales = [:en, :ja]
     config.i18n.default_locale = :ja
   end
 end
+

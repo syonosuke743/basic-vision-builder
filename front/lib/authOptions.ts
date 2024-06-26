@@ -13,15 +13,15 @@ export const authOptions: NextAuthOptions = {
     })
   ],
   callbacks: {
-    async signIn({user, account}){
+    async signIn({ user, account}){
       const provider = account?.provider;
       const uid = user?.id;
       const name = user?.name;
       const email = user?.email;
+      //sessionの中にUIDを含める
       //console.log("-------------------------------------------------------")
       //console.log(provider,uid,name,email)
       //console.log("-------------------------------------------------------")
-      //fetchで確認してaxiosのエラーかの確認
     try {
       const response = await fetch(`${apiUrl}/auth/${provider}/callback`, {
       method: 'POST',
@@ -36,32 +36,24 @@ export const authOptions: NextAuthOptions = {
       })
       });
       if (response.ok) {
-      return true;
+        return true;
       } else {
+        console.error('Sign-in error: Failed to authenticate with the provider');
         return false;
       }
       } catch (error) {
           console.log("エラー", error);
-            return false;
-        }
-      /*try {
-        const response = await axios.post(
-          `${apiUrl}/auth/${provider}/callback`,{
-            provider,
-            uid,
-            name,
-            email,
-          }
-        );
-        if (response.status === 200){
-          return true;
-        }else{
           return false;
         }
-      } catch (error) {
-        console.log("エラー",error);
-        return false;
-      }*/
+    },
+    async session({ session, token }) {
+      // ユーザーオブジェクトに id プロパティがあるか確認
+      if (token?.sub) {
+        session.user.id = token.sub;
+      } else {
+        console.error("User does not have an id property");
+      } 
+      return session;
     },
   },
 }

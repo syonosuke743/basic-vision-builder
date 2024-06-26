@@ -1,0 +1,11 @@
+ja:
+  activerecord:
+    errors:
+      models:
+        sixhat:
+          attributes:
+            user:
+              required: "ユーザーは必須です"
+  errors:
+    messages:
+      required: "は必須です"

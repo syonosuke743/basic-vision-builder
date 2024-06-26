@@ -17,9 +17,11 @@ module Api
       # POST /api/v1/sixhats
       def create
         @sixhat = Sixhat.new(sixhat_params)
+
         if @sixhat.save
           render json: @sixhat, status: :created
         else
+          Rails.logger.error @sixhat.errors.full_messages.join(", ")
           render json: @sixhat.errors, status: :unprocessable_entity
         end
       end
@@ -46,8 +48,12 @@ module Api
       end
 
       def sixhat_params
-        params.require(:sixhat).permit(:user_id, :theme, :red, :white, :black, :green, :yellow, :blue)
+        params.require(:sixhat).permit(:uid, :theme, :red, :white, :black, :green, :yellow, :blue)
       end
     end
   end
 end
+
+
+
+

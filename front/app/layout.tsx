@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SessionWrapper from "@/components/SessionWrapper";
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +19,15 @@ export default function RootLayout({
   return (
     <SessionWrapper>
     <html lang="jp">
-      <body className={inter.className}>{children}
+      <body className={inter.className}>
+        <Header />
+          {children}
       </body>
     </html>
     </SessionWrapper>
   );
 }
+
+
+
+

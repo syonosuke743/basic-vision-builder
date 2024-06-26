@@ -1,0 +1,50 @@
+.container {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.app_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.choice_templates {
+  margin-right: auto; /* タイトル以外を右寄せにする */
+}
+
+.user_name {
+  margin-left: auto; /* ユーザー名を右寄せにする */
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.signout_button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.signout_button:hover {
+  background-color: #777;
+}
+
+.image {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
