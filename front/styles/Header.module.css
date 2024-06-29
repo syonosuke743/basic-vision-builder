@@ -19,7 +19,8 @@
 }
 
 .choice_templates {
-  margin-right: auto; /* タイトル以外を右寄せにする */
+  margin-right: 20px; /* タイトル以外を右寄せにする */
+  border: none;
 }
 
 .user_name {
@@ -46,5 +47,6 @@
   border-radius: 50%;
   height: 30px;
   width: 30px;
+  margin-right: 20px;
 }
 

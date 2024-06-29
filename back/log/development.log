@@ -2291,3 +2291,985 @@ Processing by Api::V1::SixhatsController#create as HTML
 Completed 201 Created in 38ms (Views: 0.4ms | ActiveRecord: 24.2ms | Allocations: 11345)
 
 
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:09:10 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (3.7ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 36ms (Views: 12.4ms | ActiveRecord: 7.6ms | Allocations: 11899)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:09:10 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.5ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.5ms | Allocations: 861)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:10:06 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 872)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:10:06 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:10:57 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 871)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:10:57 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:11:17 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 872)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:11:17 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:22:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.6ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 8.3ms | ActiveRecord: 3.3ms | Allocations: 11900)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:22:27 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 861)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.2 at 2024-06-28 17:25:49 +0000
+Processing by Api::V1::SixhatsController#show as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 25ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 2424)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:25:51 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 871)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:25:51 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:28:27 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.5ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.5ms | Allocations: 860)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:28:27 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:29:13 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 871)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:29:13 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:30:57 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:30:57 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:50:53 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (1.0ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 59ms (Views: 51.1ms | ActiveRecord: 7.8ms | Allocations: 3794)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:50:53 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:50:57 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.3ms | Allocations: 871)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:50:57 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:58:22 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 4.4ms | Allocations: 3750)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:58:22 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 860)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:58:25 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.6ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.6ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:58:25 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:58:33 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:58:33 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:58:38 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 860)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:58:38 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:58:41 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 17:58:41 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.5ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:01:14 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.4ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:01:14 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:01:20 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:01:20 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:01:26 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:01:26 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:12:45 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 17ms (Views: 12.2ms | ActiveRecord: 4.2ms | Allocations: 3724)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:12:45 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:12:49 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 860)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:12:49 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:14:04 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.8ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 752)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:14:04 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:18:00 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:18:00 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:18:08 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 721)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:18:08 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 721)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:18:19 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:18:19 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:18:23 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.2ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:18:23 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:18:24 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 721)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:18:24 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:20:41 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (2.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 35ms (Views: 8.2ms | ActiveRecord: 6.8ms | Allocations: 11897)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:20:41 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 861)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:20:46 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 872)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-28 18:20:46 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:20:48 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1536)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:20:48 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.6ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:25:24 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.5ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.5ms | Allocations: 734)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-28 18:25:24 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 721)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:31:53 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (2.8ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 8.3ms | ActiveRecord: 5.9ms | Allocations: 11902)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:31:53 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.2ms | Allocations: 861)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-29 19:31:57 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 1537)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-29 19:31:57 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.3ms | Allocations: 720)
+
+
+Started PUT "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-29 19:32:30 +0000
+Processing by Api::V1::SixhatsController#update as HTML
+  Parameters: {"theme"=>"bbb", "white"=>"bbb", "red"=>"bbb", "black"=>"bbb", "yellow"=>"ccc", "green"=>"ccc", "blue"=>"ccc", "id"=>"1", "sixhat"=>{"theme"=>"bbb", "red"=>"bbb", "white"=>"bbb", "black"=>"bbb", "green"=>"ccc", "yellow"=>"ccc", "blue"=>"ccc"}}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+  [1m[36mUser Load (12.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "102099541158899868378.0"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+  [1m[36mSixhat Update (2.6ms)[0m  [1m[33mUPDATE "sixhats" SET "theme" = $1, "red" = $2, "white" = $3, "black" = $4, "green" = $5, "yellow" = $6, "blue" = $7, "updated_at" = $8 WHERE "sixhats"."id" = $9[0m  [["theme", "bbb"], ["red", "bbb"], ["white", "bbb"], ["black", "bbb"], ["green", "ccc"], ["yellow", "ccc"], ["blue", "ccc"], ["updated_at", "2024-06-29 19:32:30.417447"], ["id", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+Completed 200 OK in 41ms (Views: 0.3ms | ActiveRecord: 18.4ms | Allocations: 10678)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:32:30 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 860)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:32:30 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:32:35 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.4ms | Allocations: 871)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:32:35 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:36:21 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:36:21 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.4ms | Allocations: 860)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:51:06 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (1.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 36ms (Views: 24.1ms | ActiveRecord: 11.8ms | Allocations: 3793)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:51:06 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 860)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:51:09 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:51:09 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.6ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.6ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-29 19:51:12 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 762)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-29 19:51:12 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.5ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:51:14 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:51:14 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 859)
+
+
+Started POST "/auth/google/callback" for 172.18.0.3 at 2024-06-29 19:52:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"102099541158899868378", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com", "user"=>{"uid"=>"102099541158899868378", "provider"=>"google", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com"}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 AND "users"."name" = $3 AND "users"."email" = $4 LIMIT $5[0m  [["provider", "google"], ["uid", "102099541158899868378.0"], ["name", "mimita puku"], ["email", "pukumimita0616@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+Completed 200 OK in 17ms (ActiveRecord: 5.5ms | Allocations: 8053)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:52:47 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (2.0ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 9.0ms | ActiveRecord: 3.9ms | Allocations: 7728)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:52:47 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-29 19:54:30 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.5ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 5ms (Views: 0.7ms | ActiveRecord: 0.5ms | Allocations: 981)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-29 19:54:30 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 720)
+
+
+Started POST "/auth/google/callback" for 172.18.0.3 at 2024-06-29 19:55:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"102099541158899868378", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com", "user"=>{"uid"=>"102099541158899868378", "provider"=>"google", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 AND "users"."name" = $3 AND "users"."email" = $4 LIMIT $5[0m  [["provider", "google"], ["uid", "102099541158899868378.0"], ["name", "mimita puku"], ["email", "pukumimita0616@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+Completed 200 OK in 13ms (ActiveRecord: 2.7ms | Allocations: 8052)
+
+
+Started POST "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:55:47 +0000
+Processing by Api::V1::SixhatsController#create as HTML
+  Parameters: {"uid"=>"102099541158899868378", "theme"=>"test", "white"=>"test", "red"=>"test", "black"=>"test", "yellow"=>"test", "green"=>"test", "blue"=>"test", "sixhat"=>{"uid"=>"102099541158899868378", "theme"=>"test", "red"=>"test", "white"=>"test", "black"=>"test", "green"=>"test", "yellow"=>"test", "blue"=>"test"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "102099541158899868378.0"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+  [1m[36mSixhat Create (3.1ms)[0m  [1m[32mINSERT INTO "sixhats" ("uid", "theme", "red", "white", "black", "green", "yellow", "blue", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["uid", "102099541158899868378.0"], ["theme", "test"], ["red", "test"], ["white", "test"], ["black", "test"], ["green", "test"], ["yellow", "test"], ["blue", "test"], ["created_at", "2024-06-29 19:55:47.092294"], ["updated_at", "2024-06-29 19:55:47.092294"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+Completed 201 Created in 20ms (Views: 0.6ms | ActiveRecord: 6.6ms | Allocations: 10324)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:55:47 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.6ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.6ms | Allocations: 1161)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:55:47 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 19:55:52 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 911)
+
+
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 19:55:52 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:55:55 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 1039)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:55:55 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 19:55:58 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 19:55:58 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 721)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:56:01 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.5ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.5ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:56:01 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 19:56:02 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 721)
+
+
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 19:56:02 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 720)
+
+
+Started PUT "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 19:56:11 +0000
+Processing by Api::V1::SixhatsController#update as HTML
+  Parameters: {"theme"=>"test1", "white"=>"test1", "red"=>"test1", "black"=>"test1", "yellow"=>"test1", "green"=>"test1", "blue"=>"test1", "id"=>"2", "sixhat"=>{"theme"=>"test1", "red"=>"test1", "white"=>"test1", "black"=>"test1", "green"=>"test1", "yellow"=>"test1", "blue"=>"test1"}}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "102099541158899868378.0"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+  [1m[36mSixhat Update (1.0ms)[0m  [1m[33mUPDATE "sixhats" SET "theme" = $1, "red" = $2, "white" = $3, "black" = $4, "green" = $5, "yellow" = $6, "blue" = $7, "updated_at" = $8 WHERE "sixhats"."id" = $9[0m  [["theme", "test1"], ["red", "test1"], ["white", "test1"], ["black", "test1"], ["green", "test1"], ["yellow", "test1"], ["blue", "test1"], ["updated_at", "2024-06-29 19:56:11.139522"], ["id", 2]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 2.8ms | Allocations: 3823)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:56:11 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:56:11 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 19:56:13 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 722)
+
+
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 19:56:13 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:56:15 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:56:15 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-29 19:57:46 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats/1" for 172.18.0.1 at 2024-06-29 19:57:46 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:57:48 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.9ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.9ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:57:48 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 19:57:49 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 19:57:49 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 720)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:57:50 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 19:57:50 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1027)
+
+
+Started POST "/auth/google/callback" for 172.18.0.3 at 2024-06-29 19:58:25 +0000
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"102099541158899868378", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com", "user"=>{"uid"=>"102099541158899868378", "provider"=>"google", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 AND "users"."name" = $3 AND "users"."email" = $4 LIMIT $5[0m  [["provider", "google"], ["uid", "102099541158899868378.0"], ["name", "mimita puku"], ["email", "pukumimita0616@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+Completed 200 OK in 2ms (ActiveRecord: 0.3ms | Allocations: 746)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 20:10:58 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (1.0ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 27ms (Views: 17.3ms | ActiveRecord: 9.1ms | Allocations: 3962)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 20:10:58 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1027)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 20:18:45 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.6ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 4.2ms | Allocations: 3893)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 20:18:45 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1027)
+
+
+Started DELETE "/api/v1/posts/1" for 172.18.0.1 at 2024-06-29 20:18:48 +0000
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/posts/1"):
+  
+Started DELETE "/api/v1/posts/2" for 172.18.0.1 at 2024-06-29 20:19:47 +0000
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/posts/2"):
+  
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 20:20:22 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 747)
+
+
+Started GET "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 20:20:22 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 719)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 20:20:24 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1026)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 20:20:24 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1028)
+
+
+Started DELETE "/api/v1/posts/1" for 172.18.0.1 at 2024-06-29 20:20:25 +0000
+  
+ActionController::RoutingError (No route matches [DELETE] "/api/v1/posts/1"):
+  
+Started DELETE "/api/v1/sixhats/2" for 172.18.0.1 at 2024-06-29 20:22:16 +0000
+Processing by Api::V1::SixhatsController#destroy as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mSixhat Load (0.5ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:40:in `destroy'
+  [1m[36mSixhat Destroy (0.4ms)[0m  [1m[31mDELETE FROM "sixhats" WHERE "sixhats"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:40:in `destroy'
+Completed 204 No Content in 7ms (ActiveRecord: 2.9ms | Allocations: 2026)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 20:26:59 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.5ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 859)
+
+
+Started GET "/api/v1/sixhats" for 172.18.0.1 at 2024-06-29 20:26:59 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 860)
+
+

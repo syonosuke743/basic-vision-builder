@@ -1,6 +1,10 @@
 .template_name{
   text-align: center;
 }
+/*ここは編集ページのCSS*/
+.edit{
+  text-align: center;
+}
 
 .container_theme{
   display: flex;
