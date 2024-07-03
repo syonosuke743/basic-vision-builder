@@ -1,7 +1,7 @@
 const Sample = () => {
   return (
       <div>
-          Enter
+          Test
       </div>
   );
 }
