@@ -5,5 +5,3 @@ WORKDIR /app
 
 ##Hosting in nginx 
 ##完成したReactアプリのリソースを持っているNginxのイメージを最終的な成果物のdockerイメージとして出力する
-##www配下にファイルをコピーする
-##conf.d/default
