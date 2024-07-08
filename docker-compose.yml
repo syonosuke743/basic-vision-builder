@@ -10,6 +10,8 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - mynetwork
 
   back:
     build:
@@ -20,14 +22,12 @@ services:
       - ./back:/app
       - public:/app/public
       - tmp:/app/tmp
-    # ports:
-    #  - "3000:3000"
     depends_on:
       - db
-    tty: true
-    stdin_open: true
     environment:
-      - RAILS_ENV=development
+      RAILS_ENV: development
+    networks:
+      - mynetwork
 
   front:
     build:
@@ -35,9 +35,13 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./front:/app
-    command: yarn dev -p 8000
+    command: yarn dev -p 3000
     ports:
-      - "8000:8000"
+      - "3000:3000"
+    depends_on:
+      - back
+    networks:
+      - mynetwork
 
   nginx:
     build:
@@ -47,15 +51,22 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - public:/app/public
       - tmp:/app/tmp
-      - ./back:/back  # Railsアプリケーションのコードをnginxコンテナにマウント
+      - ./back:/app  # Railsアプリケーションのコードをnginxコンテナにマウント
     ports:
       - "80:80"
     depends_on:
       - back
+      - front
+    networks:
+      - mynetwork
 
-# Define volumes used by services
 volumes:
   postgres_data:
   tmp:
   public:
+
+networks:
+  mynetwork:
+    driver: bridge
+
 

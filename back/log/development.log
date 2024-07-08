@@ -3433,3 +3433,779 @@ Started GET "/favicon.ico" for 172.21.0.1 at 2024-07-06 01:19:53 +0000
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+Started GET "/" for 172.21.0.1 at 2024-07-06 06:22:20 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.2ms | Allocations: 492)
+Completed 200 OK in 17ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/" for 172.22.0.1 at 2024-07-06 06:40:18 +0000
+  [1m[35m (16.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 2 pending migrations:
+
+20240626112318_users.rb
+20240626112519_sixhats.rb
+
+
+):
+  
+activerecord (7.0.8.1) lib/active_record/migration.rb:662:in `check_pending!'
+activerecord (7.0.8.1) lib/active_record/migration.rb:627:in `block (2 levels) in call'
+activesupport (7.0.8.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.8.1) lib/active_record/migration.rb:632:in `block in call'
+activerecord (7.0.8.1) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8.1) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+rack-cors (2.0.2) lib/rack/cors.rb:102:in `call'
+railties (7.0.8.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/favicon.ico" for 172.22.0.1 at 2024-07-06 06:40:18 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 2 pending migrations:
+
+20240626112318_users.rb
+20240626112519_sixhats.rb
+
+
+):
+  
+activerecord (7.0.8.1) lib/active_record/migration.rb:662:in `check_pending!'
+activerecord (7.0.8.1) lib/active_record/migration.rb:627:in `block (2 levels) in call'
+activesupport (7.0.8.1) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.8.1) lib/active_record/migration.rb:632:in `block in call'
+activerecord (7.0.8.1) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8.1) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.1) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.1) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+rack-cors (2.0.2) lib/rack/cors.rb:102:in `call'
+railties (7.0.8.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5277929974492897470)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Users (20240626112318)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "users" ("uid" decimal NOT NULL PRIMARY KEY, "provider" character varying NOT NULL, "name" character varying NOT NULL, "email" character varying NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_uid" ON "users" ("uid")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240626112318"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to Sixhats (20240626112519)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "sixhats" ("id" bigserial primary key, "uid" decimal NOT NULL, "theme" character varying NOT NULL, "red" text, "white" text, "black" text, "green" text, "yellow" text, "blue" text, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_7f1f9c5550"
+FOREIGN KEY ("uid")
+  REFERENCES "users" ("uid")
+)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240626112519"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-07-06 06:42:12.868763"], ["updated_at", "2024-07-06 06:42:12.868763"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5277929974492897470)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.22.0.1 at 2024-07-06 06:43:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 492)
+Completed 200 OK in 10ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 3962)
+
+
+Started GET "/" for 172.22.0.1 at 2024-07-06 06:47:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 492)
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/api/v1/sixhats" for 172.22.0.1 at 2024-07-06 06:52:35 +0000
+Processing by Api::V1::SixhatsController#index as HTML
+  [1m[36mSixhat Load (2.7ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 4.9ms | ActiveRecord: 2.7ms | Allocations: 3180)
+
+
+Started GET "/favicon.ico" for 172.22.0.1 at 2024-07-06 06:52:35 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/users" for 172.22.0.1 at 2024-07-06 06:52:54 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/users"):
+  
+Started GET "/api/v1/user" for 172.22.0.1 at 2024-07-06 06:53:08 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/user"):
+  
+Started GET "/api/v1/sixhats" for 172.22.0.1 at 2024-07-06 06:53:17 +0000
+Processing by Api::V1::SixhatsController#index as HTML
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 668)
+
+
+Started GET "/api/v1/sixhats/1" for 172.22.0.1 at 2024-07-06 06:53:24 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.1ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 404 Not Found in 15ms (ActiveRecord: 9.4ms | Allocations: 3110)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sixhat with 'id'=1):
+  
+app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Started GET "/" for 172.22.0.1 at 2024-07-06 07:04:33 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.0ms | Allocations: 492)
+Completed 200 OK in 20ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/" for 172.22.0.1 at 2024-07-06 07:08:00 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 492)
+Completed 200 OK in 6ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/api/v1/sixhats" for 172.22.0.1 at 2024-07-06 07:12:39 +0000
+Processing by Api::V1::SixhatsController#index as HTML
+  [1m[36mSixhat Load (2.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 18ms (Views: 11.6ms | ActiveRecord: 2.3ms | Allocations: 2717)
+
+
+Started GET "/" for 172.22.0.1 at 2024-07-06 07:21:58 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | Allocations: 492)
+Completed 200 OK in 17ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/" for 172.22.0.1 at 2024-07-06 08:02:52 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.3ms | Allocations: 492)
+Completed 200 OK in 22ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/api/v1/sixhats" for 172.22.0.1 at 2024-07-06 08:07:39 +0000
+Processing by Api::V1::SixhatsController#index as HTML
+  [1m[36mSixhat Load (2.6ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 1.9ms | ActiveRecord: 2.6ms | Allocations: 2717)
+
+
+Started GET "/favicon.ico" for 172.22.0.1 at 2024-07-06 08:07:39 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/api/v1/sixhats" for 172.22.0.1 at 2024-07-06 08:08:24 +0000
+Processing by Api::V1::SixhatsController#index as HTML
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 681)
+
+
+Started GET "/api/v1/sixhats" for 172.22.0.1 at 2024-07-06 08:08:34 +0000
+Processing by Api::V1::SixhatsController#index as HTML
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 683)
+
+
+Started GET "/" for 172.22.0.1 at 2024-07-06 08:55:26 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 492)
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/" for 172.22.0.1 at 2024-07-06 09:12:20 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | Allocations: 492)
+Completed 200 OK in 17ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-06 18:22:31 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as */*
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 494)
+Completed 200 OK in 7ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 3411)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: nginx
+Started GET "/" for 172.22.0.1 at 2024-07-06 18:33:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 492)
+Completed 200 OK in 7ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/api/v1/sixhats" for 172.22.0.1 at 2024-07-06 18:34:01 +0000
+Processing by Api::V1::SixhatsController#index as HTML
+  [1m[36mSixhat Load (1.9ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 1.9ms | Allocations: 2717)
+
+
+Started GET "/auth/google/callback" for 172.22.0.1 at 2024-07-06 18:34:29 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/auth/google/callback"):
+  
+Started GET "/favicon.ico" for 172.22.0.1 at 2024-07-06 18:34:29 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for 172.22.0.1 at 2024-07-06 18:34:52 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 272)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 802)
+
+
+Started GET "/auth/:provider/callback" for 172.22.0.1 at 2024-07-06 18:34:55 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/auth/:provider/callback"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-06 18:46:41 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as */*
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.9ms | Allocations: 494)
+Completed 200 OK in 13ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 3411)
+
+
+Started GET "/api/auth/session" for 172.23.0.1 at 2024-07-06 18:47:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/session"):
+  
+Started GET "/api/auth/session" for 172.23.0.1 at 2024-07-06 18:47:23 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/session"):
+  
+Started POST "/api/auth/_log" for 172.23.0.1 at 2024-07-06 18:47:23 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/api/auth/_log"):
+  
+Started POST "/api/auth/_log" for 172.23.0.1 at 2024-07-06 18:47:23 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/api/auth/_log"):
+  
+Started GET "/api/auth/providers" for 172.23.0.1 at 2024-07-06 18:47:27 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/providers"):
+  
+Started POST "/api/auth/_log" for 172.23.0.1 at 2024-07-06 18:47:27 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/api/auth/_log"):
+  
+Started GET "/api/auth/error" for 172.23.0.1 at 2024-07-06 18:47:27 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/error"):
+  
+Started GET "/api/auth/session" for 172.23.0.1 at 2024-07-06 18:47:37 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/session"):
+  
+Started GET "/api/auth/session" for 172.23.0.1 at 2024-07-06 18:47:38 +0000
+Started POST "/api/auth/_log" for 172.23.0.1 at 2024-07-06 18:47:38 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/session"):
+  
+  
+ActionController::RoutingError (No route matches [POST] "/api/auth/_log"):
+  
+Started POST "/api/auth/_log" for 172.23.0.1 at 2024-07-06 18:47:38 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/api/auth/_log"):
+  
+Started GET "/api/auth/providers" for 172.23.0.1 at 2024-07-06 18:52:29 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/providers"):
+  
+Started POST "/api/auth/_log" for 172.23.0.1 at 2024-07-06 18:52:29 +0000
+  
+ActionController::RoutingError (No route matches [POST] "/api/auth/_log"):
+  
+Started GET "/api/auth/error" for 172.23.0.1 at 2024-07-06 18:52:29 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/error"):
+  
+Started GET "/" for 172.24.0.1 at 2024-07-06 19:10:59 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.3ms | Allocations: 492)
+Completed 200 OK in 9ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/" for 172.24.0.1 at 2024-07-06 19:21:14 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.2ms | Allocations: 492)
+Completed 200 OK in 10ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/" for 172.24.0.1 at 2024-07-06 19:34:03 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 492)
+Completed 200 OK in 8ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/" for 172.24.0.1 at 2024-07-06 19:47:37 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.8ms | Allocations: 492)
+Completed 200 OK in 10ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 3369)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-06 19:51:25 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as */*
+  Rendering /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-7.0.8.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.3ms | Allocations: 494)
+Completed 200 OK in 13ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 3411)
+
+
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: nginx
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: nginx
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: nginx
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: nginx
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: nginx
+Started GET "/api/auth/callback/google?state=768Jw4bGkbFDBVa7t6mEImlzhuQtSQIbqAdqBzZRmC4&code=4%2F0ATx3LY5NAU74Sgkr_8dYIHi15tlqh1Ny-Aw0lR6hTYG9g2iIeS4j-w0lHzxr6hkUb_Kipg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.30.0.1 at 2024-07-07 17:50:46 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/callback/google"):
+  
+Started GET "/api/auth/callback/google?state=dwui8H_9hjeesb6m93oC4tt53EsbJ9GdpDBEqQa-MLk&code=4%2F0ATx3LY6B8-emjhw1zzNu-cCQAPPKgoRCVexssSxjFKSVXFP-g8JfBLFC0Kd4KqhS6GXZ-g&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none" for 172.30.0.1 at 2024-07-07 17:58:34 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/callback/google"):
+  
+Started GET "/api/auth/callback/google?state=ZM0LE__UU9fPKiETWVLIzEMRDmbn3aTXlCxzoirk9iM&code=4%2F0ATx3LY7aPdxWnkE5T0NxKfFs61E5rPi6zf_RTsL-YzGiC1JIaCpuP5IVyiOSUTFnLNWZWQ&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.30.0.1 at 2024-07-07 19:12:51 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/callback/google"):
+  
+Started GET "/api/auth/callback/google?state=FvExv8UZhZtWN1U77bBYXPqqMvy3pU74MX8kXs10-oo&code=4%2F0ATx3LY5InDqpGdD1c13H206nFPNTDjG7kWQBY94RSB3EQPzKMPlGFCQ9gV47W6CrplPlfA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none" for 172.30.0.1 at 2024-07-07 23:27:40 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/callback/google"):
+  
+[ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: nginx
+Started GET "/api/auth/callback/google?state=8TW87NK6WA-RDuB0BET__mbn5mAJbpAnGRix48bHnIw&code=4%2F0ATx3LY52LFnWnkYzWiRmxNGFOeLTWJcPFXDITyrfARor9dtwp73YMNByKONDun5ceQvGTg&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none" for 172.31.0.1 at 2024-07-08 00:05:01 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/callback/google"):
+  
+Started GET "/api/auth/callback/google?state=HcaRNEllZNlXwbrAAn2ks2S0y1J3z6TpbbF2ZRSsBHs&code=4%2F0ATx3LY6KDvJJ0zT4r1YsJ9II5fMXxV0Io2W2qIveq7jptKIRpYB0i2z_6b7MSTCZf1l6sg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none" for 172.31.0.1 at 2024-07-08 00:08:52 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/api/auth/callback/google"):
+  
+Started POST "/auth/google/callback" for 172.31.0.4 at 2024-07-08 00:16:19 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"102099541158899868378", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com", "user"=>{"uid"=>"102099541158899868378", "provider"=>"google", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 AND "users"."name" = $3 AND "users"."email" = $4 LIMIT $5[0m  [["provider", "google"], ["uid", "102099541158899868378.0"], ["name", "mimita puku"], ["email", "pukumimita0616@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("uid", "provider", "name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "uid"[0m  [["uid", "102099541158899868378.0"], ["provider", "google"], ["name", "mimita puku"], ["email", "pukumimita0616@gmail.com"], ["created_at", "2024-07-08 00:16:19.506927"], ["updated_at", "2024-07-08 00:16:19.506927"]]
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+Completed 200 OK in 39ms (ActiveRecord: 7.6ms | Allocations: 10702)
+
+
+Started POST "/auth/google/callback" for 172.31.0.4 at 2024-07-08 00:34:36 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"102099541158899868378", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com", "user"=>{"uid"=>"102099541158899868378", "provider"=>"google", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 AND "users"."name" = $3 AND "users"."email" = $4 LIMIT $5[0m  [["provider", "google"], ["uid", "102099541158899868378.0"], ["name", "mimita puku"], ["email", "pukumimita0616@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+Completed 200 OK in 35ms (ActiveRecord: 4.1ms | Allocations: 8048)
+
+
+Started POST "/auth/google/callback" for 172.31.0.4 at 2024-07-08 05:54:44 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"102099541158899868378", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com", "user"=>{"uid"=>"102099541158899868378", "provider"=>"google", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 AND "users"."name" = $3 AND "users"."email" = $4 LIMIT $5[0m  [["provider", "google"], ["uid", "102099541158899868378.0"], ["name", "mimita puku"], ["email", "pukumimita0616@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+Completed 200 OK in 39ms (ActiveRecord: 4.2ms | Allocations: 8040)
+
+
+Started POST "/api/v1/sixhats" for 172.31.0.5 at 2024-07-08 06:07:44 +0000
+Processing by Api::V1::SixhatsController#create as */*
+  Parameters: {"uid"=>"testuser", "theme"=>"testtheme", "white"=>"testwhite", "red"=>"testred", "black"=>"testblack", "yellow"=>"testyellow", "green"=>"testgreen", "blue"=>"testblue", "sixhat"=>{"uid"=>"testuser", "theme"=>"testtheme", "red"=>"testred", "white"=>"testwhite", "black"=>"testblack", "green"=>"testgreen", "yellow"=>"testyellow", "blue"=>"testblue"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "0.0"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+User ユーザーは必須です
+Completed 422 Unprocessable Entity in 30ms (Views: 0.4ms | ActiveRecord: 11.5ms | Allocations: 13395)
+
+
+Started POST "/api/v1/sixhats" for 172.31.0.5 at 2024-07-08 06:13:56 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SixhatsController#create as */*
+  Parameters: {"uid"=>"testuser", "theme"=>"testtheme", "white"=>"testwhite", "red"=>"testred", "black"=>"testblack", "yellow"=>"testyellow", "green"=>"testgreen", "blue"=>"testblue", "sixhat"=>{"uid"=>"testuser", "theme"=>"testtheme", "red"=>"testred", "white"=>"testwhite", "black"=>"testblack", "green"=>"testgreen", "yellow"=>"testyellow", "blue"=>"testblue"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "0.0"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+User ユーザーは必須です
+Completed 422 Unprocessable Entity in 46ms (Views: 0.5ms | ActiveRecord: 7.0ms | Allocations: 16277)
+
+
+Started POST "/auth/google/callback" for 192.168.0.4 at 2024-07-08 06:32:03 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"102099541158899868378", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com", "user"=>{"uid"=>"102099541158899868378", "provider"=>"google", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 AND "users"."name" = $3 AND "users"."email" = $4 LIMIT $5[0m  [["provider", "google"], ["uid", "102099541158899868378.0"], ["name", "mimita puku"], ["email", "pukumimita0616@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+Completed 200 OK in 32ms (ActiveRecord: 3.3ms | Allocations: 8041)
+
+
+Started POST "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:39:40 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::SixhatsController#create as HTML
+  Parameters: {"uid"=>"102099541158899868378", "theme"=>"aaa", "white"=>"aaa", "red"=>"aaaa", "black"=>"aaa", "yellow"=>"aaa", "green"=>"aaa", "blue"=>"aaa", "sixhat"=>{"uid"=>"102099541158899868378", "theme"=>"aaa", "red"=>"aaaa", "white"=>"aaa", "black"=>"aaa", "green"=>"aaa", "yellow"=>"aaa", "blue"=>"aaa"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "102099541158899868378.0"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+  [1m[36mSixhat Create (2.5ms)[0m  [1m[32mINSERT INTO "sixhats" ("uid", "theme", "red", "white", "black", "green", "yellow", "blue", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["uid", "102099541158899868378.0"], ["theme", "aaa"], ["red", "aaaa"], ["white", "aaa"], ["black", "aaa"], ["green", "aaa"], ["yellow", "aaa"], ["blue", "aaa"], ["created_at", "2024-07-08 18:39:40.709208"], ["updated_at", "2024-07-08 18:39:40.709208"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:21:in `create'
+Completed 201 Created in 46ms (Views: 0.4ms | ActiveRecord: 10.7ms | Allocations: 19012)
+
+
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:39:41 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 998)
+
+
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:39:41 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 861)
+
+
+Started GET "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:47:05 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 3.3ms | Allocations: 3864)
+
+
+Started GET "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:47:05 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 724)
+
+
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:47:07 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 849)
+
+
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:47:07 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.2ms | Allocations: 849)
+
+
+Started GET "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:47:09 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 711)
+
+
+Started GET "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:47:09 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 710)
+
+
+Started PUT "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:47:15 +0000
+Processing by Api::V1::SixhatsController#update as HTML
+  Parameters: {"theme"=>"aaa", "white"=>"bbb", "red"=>"aaaa", "black"=>"aaa", "yellow"=>"aaa", "green"=>"aaa", "blue"=>"aaa", "id"=>"1", "sixhat"=>{"theme"=>"aaa", "red"=>"aaaa", "white"=>"bbb", "black"=>"aaa", "green"=>"aaa", "yellow"=>"aaa", "blue"=>"aaa"}}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "102099541158899868378.0"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+  [1m[36mSixhat Update (1.2ms)[0m  [1m[33mUPDATE "sixhats" SET "white" = $1, "updated_at" = $2 WHERE "sixhats"."id" = $3[0m  [["white", "bbb"], ["updated_at", "2024-07-08 18:47:15.410169"], ["id", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:31:in `update'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 3.0ms | Allocations: 3746)
+
+
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:47:15 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 849)
+
+
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:47:15 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 849)
+
+
+Started GET "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:47:17 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 710)
+
+
+Started GET "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:47:17 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 710)
+
+
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:47:20 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 849)
+
+
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:47:20 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.2ms | Allocations: 849)
+
+
+Started DELETE "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:48:19 +0000
+Processing by Api::V1::SixhatsController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:40:in `destroy'
+  [1m[36mSixhat Destroy (0.2ms)[0m  [1m[31mDELETE FROM "sixhats" WHERE "sixhats"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:40:in `destroy'
+Completed 204 No Content in 14ms (ActiveRecord: 10.1ms | Allocations: 1994)
+
+
+Started GET "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:48:30 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.3ms | Allocations: 583)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sixhat with 'id'=1):
+  
+app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Started GET "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:48:30 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 550)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sixhat with 'id'=1):
+  
+app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:48:34 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 672)
+
+
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:48:34 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 672)
+
+
+Started GET "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:48:58 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 549)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sixhat with 'id'=1):
+  
+app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Started GET "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:48:58 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSixhat Load (0.1ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 549)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sixhat with 'id'=1):
+  
+app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Started PUT "/api/v1/sixhats/1" for 192.168.0.1 at 2024-07-08 18:49:10 +0000
+Processing by Api::V1::SixhatsController#update as HTML
+  Parameters: {"theme"=>"aaa", "white"=>"aaa", "red"=>"aaa", "black"=>"aaa", "yellow"=>"aaa", "green"=>"aaaa", "blue"=>"aaa", "id"=>"1", "sixhat"=>{"theme"=>"aaa", "red"=>"aaa", "white"=>"aaa", "black"=>"aaa", "green"=>"aaaa", "yellow"=>"aaa", "blue"=>"aaa"}}
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms | Allocations: 549)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Sixhat with 'id'=1):
+  
+app/controllers/api/v1/sixhats_controller.rb:47:in `set_sixhat'
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:49:13 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.4ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.4ms | Allocations: 672)
+
+
+Started GET "/api/v1/sixhats" for 192.168.0.1 at 2024-07-08 18:49:14 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats"[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 672)
+
+
+Started POST "/auth/google/callback" for 192.168.0.4 at 2024-07-08 18:51:09 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"102099541158899868378", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com", "user"=>{"uid"=>"102099541158899868378", "provider"=>"google", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 AND "users"."name" = $3 AND "users"."email" = $4 LIMIT $5[0m  [["provider", "google"], ["uid", "102099541158899868378.0"], ["name", "mimita puku"], ["email", "pukumimita0616@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+Completed 200 OK in 35ms (ActiveRecord: 4.1ms | Allocations: 8040)
+
+

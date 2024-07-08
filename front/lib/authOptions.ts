@@ -3,7 +3,7 @@ import GoogleProvider from "next-auth/providers/google";
 // import axios from "axios";
 
 
-const apiUrl = process.env.NEXT_PUBLIC_API_URL
+//const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 //console.log(apiUrl);
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -18,12 +18,9 @@ export const authOptions: NextAuthOptions = {
       const uid = user?.id;
       const name = user?.name;
       const email = user?.email;
-      //sessionの中にUIDを含める
-      //console.log("-------------------------------------------------------")
-      //console.log(provider,uid,name,email)
-      //console.log("-------------------------------------------------------")
     try {
-      const response = await fetch(`${apiUrl}/auth/${provider}/callback`, {
+      //console.log(apiUrl);
+      const response = await fetch(`http://nginx/auth/${provider}/callback`, {
       method: 'POST',
       headers: {
       'Content-Type': 'application/json'

@@ -7,6 +7,7 @@ import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
 const SixHat = () => {
   const [theme, setTheme] = useState("");
@@ -32,7 +33,7 @@ const SixHat = () => {
 
     //console.log(theme, white, red, black, yellow, green, blue);
     try {
-      await axios.post(`http://localhost:3000/api/v1/sixhats`, {
+      await axios.post(`${apiUrl}/api/v1/sixhats`, {
         uid: userId,
         theme: theme,
         white: white,
@@ -45,6 +46,7 @@ const SixHat = () => {
 
       router.push("/show-templates");
     } catch (err) {
+      console.error("Error creating sixhat:", err);
       alert("New sixhat could not be created"); 
     }
   };

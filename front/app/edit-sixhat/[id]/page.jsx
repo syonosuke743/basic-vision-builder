@@ -16,10 +16,12 @@ const EditSixhat = ({ params }) => {
   const [blue, setBlue] = useState("");
   const router = useRouter();
 
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL
+
   useEffect(() => {
     const fetchSixhatData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/v1/sixhats/${params.id}`);
+        const response = await axios.get(`${apiUrl}/api/v1/sixhats/${params.id}`);
         const sixhatData = response.data;
         setTheme(sixhatData.theme);
         setWhite(sixhatData.white);
@@ -42,7 +44,7 @@ const EditSixhat = ({ params }) => {
     e.preventDefault();
 
     try {
-      await axios.put(`http://localhost:3000/api/v1/sixhats/${params.id}`, {
+      await axios.put(`${apiUrl}/api/v1/sixhats/${params.id}`, {
         theme,
         white,
         red,

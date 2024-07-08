@@ -4,7 +4,7 @@ import axios from 'axios';
 import styles from "@/styles/CreateSixhat.module.css";
 import Image from "next/image";
 
-
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
 
 const ShowSixhat = ({ params }) => {
   const [sixhats, setSixhats] = useState(null);
@@ -12,7 +12,7 @@ const ShowSixhat = ({ params }) => {
   useEffect(() => {
     const fetchSixhatData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/api/v1/sixhats/${params.id}`);
+        const response = await axios.get(`${apiUrl}/api/v1/sixhats/${params.id}`);
         setSixhats(response.data);
       } catch (err) {
         console.error("Error fetching sixhat data", err);

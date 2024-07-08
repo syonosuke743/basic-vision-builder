@@ -11,13 +11,15 @@ interface Sixhat {
   // Add other properties if needed
 }
 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL
+
 const Page = () => {
   const [sixhats, setSixhats] = useState<Sixhat[]>([]);
 
   useEffect(() => {
     const fetchSixhats = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/v1/sixhats");
+        const res = await fetch(`${apiUrl}/api/v1/sixhats`);
         const sixhatsData = await res.json();
         setSixhats(sixhatsData);
       } catch (err) {
@@ -34,7 +36,7 @@ const Page = () => {
     if (!confirmed) return;
 
     try {
-      await axios.delete(`http://localhost:3000/api/v1/sixhats/${sixhatsId}`);
+      await axios.delete(`${apiUrl}/api/v1/sixhats/${sixhatsId}`);
       // Update the state after deletion
       setSixhats((prevSixhats) => prevSixhats.filter(sixhat => sixhat.id !== sixhatsId));
     } catch (err) {
