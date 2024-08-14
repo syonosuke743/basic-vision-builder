@@ -19,7 +19,14 @@ const Page = () => {
   useEffect(() => {
     const fetchSixhats = async () => {
       try {
-        const res = await fetch(`${apiUrl}/api/v1/sixhats`);
+        const res = await fetch(`${apiUrl}/api/v1/sixhats`, {
+          method: 'GET'
+        });
+      
+        if (!res.ok) {
+          throw new Error('Failed to fetch sixhats');
+        }
+      
         const sixhatsData = await res.json();
         setSixhats(sixhatsData);
       } catch (err) {
@@ -36,12 +43,16 @@ const Page = () => {
     if (!confirmed) return;
 
     try {
-      await axios.delete(`${apiUrl}/api/v1/sixhats/${sixhatsId}`);
+      await fetch(`${apiUrl}/api/v1/sixhats/${sixhatsId}`, {
+        method: 'DELETE'
+      });
+    
       // Update the state after deletion
       setSixhats((prevSixhats) => prevSixhats.filter(sixhat => sixhat.id !== sixhatsId));
     } catch (err) {
       alert("Sixhat could not be deleted");
     }
+    
   };
 
   return (

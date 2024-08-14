@@ -33,21 +33,27 @@ const SixHat = () => {
 
     //console.log(theme, white, red, black, yellow, green, blue);
     try {
-      await axios.post(`${apiUrl}/api/v1/sixhats`, {
-        uid: userId,
-        theme: theme,
-        white: white,
-        red: red,
-        black: black,
-        yellow: yellow,
-        green: green,
-        blue: blue
+      await fetch(`${apiUrl}/api/v1/sixhats`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          uid: userId,
+          theme: theme,
+          white: white,
+          red: red,
+          black: black,
+          yellow: yellow,
+          green: green,
+          blue: blue
+        })
       });
-
+    
       router.push("/show-templates");
     } catch (err) {
       console.error("Error creating sixhat:", err);
-      alert("New sixhat could not be created"); 
+      alert("New sixhat could not be created");
     }
   };
 

@@ -11,6 +11,8 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
     resource "*",
       headers: :any,
-      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+      methods: [:get, :post, :put, :patch, :delete, :options, :head],
+      #デバッグ用の処理
+      expose: ['Access-Control-Allow-Origin', 'Access-Control-Allow-Methods', 'Access-Control-Allow-Headers']
   end
 end

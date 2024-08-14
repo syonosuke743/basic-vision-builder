@@ -1,0 +1,43 @@
+version: "3"
+services:
+  back:
+    build:
+      context: ./back
+      dockerfile: Dockerfile
+    command: bash -c "rm -f tmp/pids/server.pid && mkdir -p tmp/sockets && bundle exec puma -C config/puma.rb"
+    volumes:
+      - public:/app/public
+      - tmp:/app/tmp
+    environment:
+      - RAILS_ENV=production
+      - APP_DATABASE=${APP_DATABASE}
+      - APP_DATABASE_USERNAME=${APP_DATABASE_USERNAME}
+      - APP_DATABASE_PASSWORD=${APP_DATABASE_PASSWORD}
+      - APP_DATABASE_HOST=${APP_DATABASE_HOST}
+    networks:
+      - mynetwork
+
+  nginx:
+    build:
+      context: .
+      dockerfile: ./nginx.prod/Dockerfile
+    volumes:
+      - ./nginx.prod/nginx.conf:/etc/nginx/nginx.conf
+      - public:/app/public
+      - tmp:/app/tmp
+    ports:
+      - "443:443"
+    depends_on:
+      - back
+    networks:
+      - mynetwork
+
+volumes:
+  tmp:
+  public:
+
+networks:
+  mynetwork:
+    driver: bridge
+
+

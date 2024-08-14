@@ -44,20 +44,30 @@ const EditSixhat = ({ params }) => {
     e.preventDefault();
 
     try {
-      await axios.put(`${apiUrl}/api/v1/sixhats/${params.id}`, {
-        theme,
-        white,
-        red,
-        black,
-        yellow,
-        green,
-        blue
+      const response = await fetch(`${apiUrl}/api/v1/sixhats/${params.id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          theme,
+          white,
+          red,
+          black,
+          yellow,
+          green,
+          blue
+        })
       });
-
-      router.push("/show-templates");
+    
+      if (response.ok) {
+        router.push("/show-templates");
+      } else {
+        throw new Error('Sixhat update failed');
+      }
     } catch (error) {
       alert("Sixhat update failed");
-    }
+    }    
   };
 
   return (

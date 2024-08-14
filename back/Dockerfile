@@ -13,9 +13,11 @@ COPY . /app
 
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
+
+#server.pidを消す処理
 ENTRYPOINT ["entrypoint.sh"]
 
-#Nginxが起動するのでポートを空ける必要がなくなるはず…
+#Nginxが起動するのでポートを空ける必要がなくなる
 #EXPOSE 3000 
 
 # Start the main process.
