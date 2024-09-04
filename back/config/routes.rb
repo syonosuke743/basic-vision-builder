@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  ##Production healthcheck routes
+  get '/healthcheck', to: proc { [200, {}, ['']] }
+
   #NextAuth routes
   post 'auth/:provider/callback', to:'api/v1/users#create'
 

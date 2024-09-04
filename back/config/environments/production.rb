@@ -65,16 +65,5 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  # Database configuration for RDS
-  config.active_record.database_configuration = {
-    production: {
-      adapter: 'postgresql',
-      encoding: 'unicode',
-      pool: 5,
-      database: ENV['APP_DATABASE'],
-      username: ENV['APP_DATABASE_USERNAME'],
-      password: ENV['APP_DATABASE_PASSWORD'],
-      host: ENV['APP_DATABASE_HOST']
-    }
-  }
+
 end

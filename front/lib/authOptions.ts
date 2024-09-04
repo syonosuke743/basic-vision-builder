@@ -2,8 +2,7 @@ import { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 // import axios from "axios";
 
-
-//const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+const apiauthUrl = process.env.NEXTAUTH_NGINX_URL;
 //console.log(apiUrl);
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -20,7 +19,7 @@ export const authOptions: NextAuthOptions = {
       const email = user?.email;
     try {
       //console.log(apiUrl);
-      const response = await fetch(`http://nginx/auth/${provider}/callback`, {
+      const response = await fetch(`${apiauthUrl}/auth/${provider}/callback`, {
       method: 'POST',
       headers: {
       'Content-Type': 'application/json'

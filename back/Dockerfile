@@ -14,11 +14,15 @@ COPY . /app
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
 
-#server.pidを消す処理
+#databaseの処理
 ENTRYPOINT ["entrypoint.sh"]
 
-#Nginxが起動するのでポートを空ける必要がなくなる
+#Nginxとunixソケット通信するのでポートを空ける必要がなくなる
 #EXPOSE 3000 
 
+# 以下の記述があることでnginxから見ることができる
+VOLUME /app/public
+VOLUME /app/tmp
+
 # Start the main process.
-CMD ["sh", "./back/start-server.sh"]
+CMD bash -c "rm -f tmp/pids/server.pid && bundle exec puma -C config/puma.rb"
