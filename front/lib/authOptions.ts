@@ -11,6 +11,8 @@ export const authOptions: NextAuthOptions = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
     })
   ],
+  //デプロイ時に必要なシークレットキー
+  secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
     async signIn({ user, account}){
       const provider = account?.provider;
