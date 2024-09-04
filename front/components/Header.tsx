@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <header className={styles.container}>
-      <div className={styles.app_title}>Basic vision builder</div>
+      <div className={styles.app_title}>Idea Template Box</div>
       {session && (
         <div className={styles.menu}>
           <div className={styles.choice_templates}>

@@ -24,7 +24,7 @@ const Doshboard = () => {
     <>
     <main className={styles.mainContent}>
       <div className={styles.leftColumn}>
-        <h1>ようこそBasicVisionBuilderへ</h1>
+        <h1>ようこそIdeaTemplateBoxへ</h1>
         <p>ここではアイデアの発想に有用とされるテンプレートを複数用意しています。</p>
         <p>また、テンプレートだけを印刷して使うこともできます。</p>
       </div>
