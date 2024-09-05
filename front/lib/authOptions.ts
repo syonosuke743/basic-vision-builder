@@ -21,7 +21,7 @@ export const authOptions: NextAuthOptions = {
       const email = user?.email;
     try {
       //console.log(apiUrl);
-      const response = await fetch(`${apiauthUrl}/api/auth/${provider}/callback`, {
+      const response = await fetch(`${apiauthUrl}/auth/${provider}/callback`, {
       method: 'POST',
       headers: {
       'Content-Type': 'application/json'
