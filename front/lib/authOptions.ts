@@ -2,7 +2,7 @@ import { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 // import axios from "axios";
 
-const apiauthUrl = process.env.NEXTAUTH_NGINX_URL;
+const apiauthUrl = process.env.NEXT_PUBLIC_API_URL;
 //console.log(apiUrl);
 export const authOptions: NextAuthOptions = {
   providers: [
