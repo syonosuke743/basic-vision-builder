@@ -5065,3 +5065,12 @@ Processing by Api::V1::UsersController#create as */*
 Completed 200 OK in 18ms (ActiveRecord: 4.5ms | Allocations: 8041)
 
 
+Started POST "/auth/google/callback" for 172.18.0.5 at 2024-09-10 19:21:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"102099541158899868378", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com", "user"=>{"uid"=>"102099541158899868378", "provider"=>"google", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com"}}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 AND "users"."name" = $3 AND "users"."email" = $4 LIMIT $5[0m  [["provider", "google"], ["uid", "102099541158899868378.0"], ["name", "mimita puku"], ["email", "pukumimita0616@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:7:in `create'
+Completed 200 OK in 39ms (ActiveRecord: 6.6ms | Allocations: 8040)
+
+

@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      elevatorPitch
+      elevatorPitch 開発中
     </div>
   )
 }

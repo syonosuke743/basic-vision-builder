@@ -3,7 +3,7 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      create-mandala
+      mandala 開発中
     </div>
   )
 }
