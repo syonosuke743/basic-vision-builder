@@ -13,6 +13,7 @@ export const authOptions: NextAuthOptions = {
     })
   ],
   secret: process.env.NEXTAUTH_SECRET, // デプロイ時に必要なシークレットキー
+  debug: true, // デバッグモードを有効にする
 
   callbacks: {
     async signIn({ user, account }) {
