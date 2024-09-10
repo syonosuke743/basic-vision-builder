@@ -3,7 +3,7 @@ import { JWT } from "next-auth/jwt"; // JWT 型をインポート
 import GoogleProvider from "next-auth/providers/google";
 
 // API URLの環境変数（デフォルト値も設定）
-const apiauthUrl = process.env.NEXT_PUBLIC_API_URL 
+const apiUrl = process.env.NEXT_PUBLIC_API_URL 
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -22,7 +22,7 @@ export const authOptions: NextAuthOptions = {
       const name = user?.name;
       const email = user?.email;
       try {
-        const response = await fetch(`${apiauthUrl}/auth/${provider}/callback`, {
+        const response = await fetch(`${apiUrl}/auth/${provider}/callback`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
