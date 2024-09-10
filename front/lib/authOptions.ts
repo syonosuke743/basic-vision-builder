@@ -10,6 +10,13 @@ export const authOptions: NextAuthOptions = {
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID as string,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
+      authorization: {
+        params: {
+          // リフレッシュトークンを取得するために access_type と prompt を設定
+          access_type: 'offline',
+          prompt: 'consent',
+        },
+      },
     })
   ],
   secret: process.env.NEXTAUTH_SECRET, // デプロイ時に必要なシークレットキー
@@ -85,7 +92,7 @@ export const authOptions: NextAuthOptions = {
 // アクセストークンをリフレッシュする関数
 async function refreshAccessToken(token: JWT): Promise<JWT> {
   try {
-    const url = `https://oauth2.googleapis.com/token`;//これはgoogleに送るURLだから変えない。
+    const url = `https://oauth2.googleapis.com/token`; // これはgoogleに送るURLだから変えない。
     const response = await fetch(url, {
       method: 'POST',
       headers: {
@@ -113,5 +120,3 @@ async function refreshAccessToken(token: JWT): Promise<JWT> {
     return { ...token, error: "RefreshAccessTokenError" };
   }
 }
-
-
