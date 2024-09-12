@@ -1,28 +1,49 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import styles from "@/styles/CreateSixhat.module.css";
 import Image from "next/image";
+import { useSession } from 'next-auth/react';
 
-const apiUrl = process.env.NEXT_PUBLIC_API_URL
+const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
 const ShowSixhat = ({ params }) => {
   const [sixhats, setSixhats] = useState(null);
+  const [error, setError] = useState(null);
+  const { data: session } = useSession();
+  const userId = session?.user?.id; // UIDをセッションから取得
 
   useEffect(() => {
     const fetchSixhatData = async () => {
       try {
-        const response = await axios.get(`${apiUrl}/api/v1/sixhats/${params.id}`);
-        setSixhats(response.data);
+        // fetchを使い、X-UIDヘッダーをリクエストに追加
+        const response = await fetch(`${apiUrl}/api/v1/sixhats/${params.id}`, {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-UID': userId // X-UIDヘッダーにユーザーIDを設定
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error("データの取得に失敗しました。");
+        }
+
+        const data = await response.json();
+        setSixhats(data);
       } catch (err) {
-        console.error("Error fetching sixhat data", err);
+        //console.error("Error fetching sixhat data", err);
+        setError("データの取得に失敗しました。");
       }
     };
 
-    if (params.id) {
+    if (params.id && userId) {
       fetchSixhatData();
     }
-  }, [params.id]);
+  }, [params.id, userId]);
+
+  if (error) {
+    return <div className={styles.error}>{error}</div>;
+  }
 
   if (!sixhats) {
     return <div>Loading...</div>;
@@ -103,6 +124,6 @@ const ShowSixhat = ({ params }) => {
       </div>
     </main>
   );
-}
+};
 
 export default ShowSixhat;

@@ -1,8 +1,9 @@
-"use client"
+"use client";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 import styles from "@/styles/CreateSixhat.module.css";
 import Link from "next/link";
 
@@ -15,13 +16,15 @@ const EditSixhat = ({ params }) => {
   const [green, setGreen] = useState("");
   const [blue, setBlue] = useState("");
   const router = useRouter();
+  const { data: session } = useSession();
+  const userId = session?.user?.id; // ユーザー ID を取得
 
-  const apiUrl = process.env.NEXT_PUBLIC_API_URL
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL;
 
   useEffect(() => {
     const fetchSixhatData = async () => {
       try {
-        const response = await axios.get(`${apiUrl}/api/v1/sixhats/${params.id}`);
+        const response = await axios.get(`${apiUrl}/api/v1/sixhats/${params.id}?uid=${userId}`);
         const sixhatData = response.data;
         setTheme(sixhatData.theme);
         setWhite(sixhatData.white);
@@ -38,7 +41,7 @@ const EditSixhat = ({ params }) => {
     if (params.id) {
       fetchSixhatData();
     }
-  }, [params.id]);
+  }, [params.id, userId]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -48,6 +51,7 @@ const EditSixhat = ({ params }) => {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
+          'X-UID': userId // ユーザー ID を追加
         },
         body: JSON.stringify({
           theme,
@@ -59,7 +63,7 @@ const EditSixhat = ({ params }) => {
           blue
         })
       });
-    
+
       if (response.ok) {
         router.push("/show-templates");
       } else {
@@ -148,7 +152,7 @@ const EditSixhat = ({ params }) => {
           <Link href="/show-templates">
             <button className={styles.back_button}>戻る</button>
           </Link>
-          <button className={styles.create_button} type="submit">編集</button>
+          <button className={styles.create_button} type="submit">編集完了</button>
         </div>
       </form>
     </div>
@@ -156,4 +160,3 @@ const EditSixhat = ({ params }) => {
 };
 
 export default EditSixhat;
-

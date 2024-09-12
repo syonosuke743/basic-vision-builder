@@ -40,6 +40,9 @@ const Header = () => {
       {session && (
         <div className={styles.menu}>
           <div className={styles.choice_templates}>
+          <Link href="/choice-templates">
+            テンプレートを選択
+            </Link>
           <Link href="/show-templates">
             あなたが作ったもの
             </Link>

@@ -1,3 +1,4 @@
+// types/next-auth.d.ts
 import NextAuth from "next-auth";
 
 declare module "next-auth" {
@@ -8,6 +9,7 @@ declare module "next-auth" {
       email?: string | null;
       image?: string | null;
     };
+    accessToken?: string; // ここで accessToken を追加
   }
 
   interface User {
@@ -17,3 +19,4 @@ declare module "next-auth" {
     image?: string | null;
   }
 }
+

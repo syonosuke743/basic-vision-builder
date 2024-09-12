@@ -19,9 +19,17 @@
 }
 
 .choice_templates {
+  display: flex; /* リンクを横並びにする */
   margin-right: 20px; /* タイトル以外を右寄せにする */
   border: none;
+  color: inherit; /* リンクの色を継承する */
+  text-decoration: none;
 }
+
+.choice_templates a {
+  margin-right: 20px; /* リンク間のスペースを確保する */
+}
+
 
 .user_name {
   margin-left: auto; /* ユーザー名を右寄せにする */

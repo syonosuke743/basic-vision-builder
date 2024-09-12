@@ -7,11 +7,12 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "*"
+    origins "http://localhost:8000","http://localhost","http://idea-template-box.com","https://www.idea-template-box.com","https://api.idea-template-box.com"
 
     resource "*",
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head],
+      credentials: true, # クレデンシャル（クッキーなど）を許可
       #デバッグ用の処理
       expose: ['Access-Control-Allow-Origin', 'Access-Control-Allow-Methods', 'Access-Control-Allow-Headers']
   end

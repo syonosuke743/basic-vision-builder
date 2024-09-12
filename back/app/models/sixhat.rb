@@ -13,4 +13,3 @@ class Sixhat < ApplicationRecord
     validates :blue, presence: true
 end
 
-

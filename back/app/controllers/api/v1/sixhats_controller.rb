@@ -1,36 +1,41 @@
 class Api::V1::SixhatsController < ApplicationController
   before_action :set_sixhat, only: [:show, :update, :destroy]
+  before_action :authorize_user, only: [:index, :show, :update, :destroy]
 
   # GET /api/v1/sixhats
   def index
-    @sixhats = Sixhat.where(uid: current_user.uid)
-    render json: @sixhats
+    if current_user
+      @sixhats = Sixhat.where(uid: current_user.uid)
+      render json: @sixhats
+    else
+      render json: { error: 'User not authenticated' }, status: :unauthorized
+    end
   end
 
   # GET /api/v1/sixhats/:id
   def show
-    if @sixhat.uid == current_user.uid
-      render json: @sixhat
-    else
-      render json: { error: "Not found" }, status: :not_found
-    end
+    authorize_sixhat
+    render json: @sixhat
   end
 
   # POST /api/v1/sixhats
   def create
-    @sixhat = Sixhat.new(sixhat_params.merge(uid: current_user.uid))
-
-    if @sixhat.save
-      render json: @sixhat, status: :created
+    if current_user
+      @sixhat = Sixhat.new(sixhat_params.merge(uid: current_user.uid))
+      if @sixhat.save
+        render json: @sixhat, status: :created
+      else
+        render json: @sixhat.errors, status: :unprocessable_entity
+      end
     else
-      Rails.logger.error @sixhat.errors.full_messages.join(", ")
-      render json: @sixhat.errors, status: :unprocessable_entity
+      render json: { error: 'User not authenticated' }, status: :unauthorized
     end
   end
 
   # PATCH/PUT /api/v1/sixhats/:id
   def update
-    if @sixhat.uid == current_user.uid && @sixhat.update(sixhat_params)
+    authorize_sixhat
+    if @sixhat.update(sixhat_params)
       render json: @sixhat
     else
       render json: @sixhat.errors, status: :unprocessable_entity
@@ -39,24 +44,27 @@ class Api::V1::SixhatsController < ApplicationController
 
   # DELETE /api/v1/sixhats/:id
   def destroy
-    if @sixhat.uid == current_user.uid
-      @sixhat.destroy
-      head :no_content
-    else
-      render json: { error: "Not found" }, status: :not_found
-    end
+    authorize_sixhat
+    @sixhat.destroy
+    head :no_content
   end
 
   private
 
   def set_sixhat
-    @sixhat = Sixhat.find_by(id: params[:id], uid: current_user.uid)
-    if @sixhat.nil?
-      render json: { error: "Not found" }, status: :not_found
-    end
+    @sixhat = Sixhat.find(params[:id])
+  end
+
+  def authorize_user
+    render json: { error: 'User not authenticated' }, status: :unauthorized unless current_user
+  end
+
+  def authorize_sixhat
+    render json: { error: 'Not Authorized' }, status: :forbidden unless @sixhat.uid == current_user.uid
   end
 
   def sixhat_params
     params.require(:sixhat).permit(:theme, :red, :white, :black, :green, :yellow, :blue)
   end
 end
+
