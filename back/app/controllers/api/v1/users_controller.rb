@@ -2,6 +2,9 @@ module Api
   module V1
     class UsersController < ApplicationController
 
+      # createアクションでの認証をスキップ
+      skip_before_action :authenticate_request, only: [:create]
+
       def create
         # 引数の条件に該当するデータがあればそれを返す。なければ新規作成する
         user = User.find_or_create_by(provider: params[:provider], uid: params[:uid], name: params[:name], email: params[:email])                      

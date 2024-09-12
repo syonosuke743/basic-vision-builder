@@ -7644,3 +7644,193 @@ Processing by Api::V1::SixhatsController#index as */*
 Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.6ms | Allocations: 1574)
 
 
+Started POST "/auth/google/callback" for 172.18.0.4 at 2024-09-12 18:19:49 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"112227920694984963764", "name"=>"sy I (サイン)", "email"=>"syonosuke0616@gmail.com", "user"=>{"uid"=>"112227920694984963764", "provider"=>"google", "name"=>"sy I (サイン)", "email"=>"syonosuke0616@gmail.com"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 0.2ms | ActiveRecord: 2.5ms | Allocations: 1734)
+
+
+Started POST "/auth/google/callback" for 172.18.0.4 at 2024-09-12 18:23:45 +0000
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"112227920694984963764", "name"=>"sy I (サイン)", "email"=>"syonosuke0616@gmail.com", "user"=>{"uid"=>"112227920694984963764", "provider"=>"google", "name"=>"sy I (サイン)", "email"=>"syonosuke0616@gmail.com"}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 AND "users"."name" = $3 AND "users"."email" = $4 LIMIT $5[0m  [["provider", "google"], ["uid", "112227920694984963764.0"], ["name", "sy I (サイン)"], ["email", "syonosuke0616@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/users_controller.rb:10:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("uid", "provider", "name", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "uid"[0m  [["uid", "112227920694984963764.0"], ["provider", "google"], ["name", "sy I (サイン)"], ["email", "syonosuke0616@gmail.com"], ["created_at", "2024-09-12 18:23:45.868693"], ["updated_at", "2024-09-12 18:23:45.868693"]]
+  ↳ app/controllers/api/v1/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/users_controller.rb:10:in `create'
+Completed 200 OK in 33ms (ActiveRecord: 4.5ms | Allocations: 10675)
+
+
+Started GET "/api/v1/sixhats?uid=112227920694984963764" for 172.18.0.1 at 2024-09-12 18:23:49 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  Parameters: {"uid"=>"112227920694984963764", "sixhat"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.7ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."uid" = $1[0m  [["uid", "112227920694984963764.0"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 2.2ms | Allocations: 1800)
+
+
+Started GET "/api/v1/sixhats?uid=112227920694984963764" for 172.18.0.1 at 2024-09-12 18:23:49 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  Parameters: {"uid"=>"112227920694984963764", "sixhat"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.7ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."uid" = $1[0m  [["uid", "112227920694984963764.0"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 1.0ms | Allocations: 1230)
+
+
+Started POST "/api/v1/sixhats" for 172.18.0.1 at 2024-09-12 18:24:05 +0000
+Processing by Api::V1::SixhatsController#create as */*
+  Parameters: {"uid"=>"112227920694984963764", "theme"=>"ハロー", "white"=>"あああ", "red"=>"ああ", "black"=>"ああ", "yellow"=>"ああ", "green"=>"ああ", "blue"=>"ああ", "sixhat"=>{"uid"=>"112227920694984963764", "theme"=>"ハロー", "red"=>"ああ", "white"=>"あああ", "black"=>"ああ", "green"=>"ああ", "yellow"=>"ああ", "blue"=>"ああ"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+[31mUnpermitted parameter: :uid. Context: { controller: Api::V1::SixhatsController, action: create, request: #<ActionDispatch::Request:0x00007f185383ed80>, params: {"uid"=>"112227920694984963764", "theme"=>"ハロー", "white"=>"あああ", "red"=>"ああ", "black"=>"ああ", "yellow"=>"ああ", "green"=>"ああ", "blue"=>"ああ", "controller"=>"api/v1/sixhats", "action"=>"create", "sixhat"=>{"uid"=>"112227920694984963764", "theme"=>"ハロー", "red"=>"ああ", "white"=>"あああ", "black"=>"ああ", "green"=>"ああ", "yellow"=>"ああ", "blue"=>"ああ"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:25:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:25:in `create'
+  [1m[36mSixhat Create (2.7ms)[0m  [1m[32mINSERT INTO "sixhats" ("uid", "theme", "red", "white", "black", "green", "yellow", "blue", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["uid", "112227920694984963764.0"], ["theme", "ハロー"], ["red", "ああ"], ["white", "あああ"], ["black", "ああ"], ["green", "ああ"], ["yellow", "ああ"], ["blue", "ああ"], ["created_at", "2024-09-12 18:24:05.299796"], ["updated_at", "2024-09-12 18:24:05.299796"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:25:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/sixhats_controller.rb:25:in `create'
+Completed 201 Created in 22ms (Views: 0.3ms | ActiveRecord: 7.3ms | Allocations: 11093)
+
+
+Started GET "/api/v1/sixhats?uid=112227920694984963764" for 172.18.0.1 at 2024-09-12 18:24:05 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  Parameters: {"uid"=>"112227920694984963764", "sixhat"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."uid" = $1[0m  [["uid", "112227920694984963764.0"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 0.6ms | Allocations: 1424)
+
+
+Started GET "/api/v1/sixhats?uid=112227920694984963764" for 172.18.0.1 at 2024-09-12 18:24:05 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  Parameters: {"uid"=>"112227920694984963764", "sixhat"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."uid" = $1[0m  [["uid", "112227920694984963764.0"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.4ms | Allocations: 1395)
+
+
+Started GET "/api/v1/sixhats/6?uid=112227920694984963764" for 172.18.0.1 at 2024-09-12 18:24:08 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"uid"=>"112227920694984963764", "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:55:in `set_sixhat'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1340)
+
+
+Started GET "/api/v1/sixhats/6?uid=112227920694984963764" for 172.18.0.1 at 2024-09-12 18:24:08 +0000
+Processing by Api::V1::SixhatsController#show as HTML
+  Parameters: {"uid"=>"112227920694984963764", "id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:55:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1207)
+
+
+Started GET "/api/v1/sixhats?uid=112227920694984963764" for 172.18.0.1 at 2024-09-12 18:24:09 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  Parameters: {"uid"=>"112227920694984963764", "sixhat"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."uid" = $1[0m  [["uid", "112227920694984963764.0"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.6ms | Allocations: 1395)
+
+
+Started GET "/api/v1/sixhats?uid=112227920694984963764" for 172.18.0.1 at 2024-09-12 18:24:10 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  Parameters: {"uid"=>"112227920694984963764", "sixhat"=>{}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.3ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."uid" = $1[0m  [["uid", "112227920694984963764.0"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.5ms | Allocations: 1395)
+
+
+Started GET "/api/v1/sixhats/6" for 172.18.0.1 at 2024-09-12 18:24:11 +0000
+Processing by Api::V1::SixhatsController#show as */*
+  Parameters: {"id"=>"6", "sixhat"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:55:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1199)
+
+
+Started GET "/api/v1/sixhats/6" for 172.18.0.1 at 2024-09-12 18:24:11 +0000
+Processing by Api::V1::SixhatsController#show as */*
+  Parameters: {"id"=>"6", "sixhat"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:55:in `set_sixhat'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 1199)
+
+
+Started GET "/api/v1/sixhats?uid=112227920694984963764" for 172.18.0.1 at 2024-09-12 18:24:12 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  Parameters: {"uid"=>"112227920694984963764", "sixhat"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."uid" = $1[0m  [["uid", "112227920694984963764.0"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms | Allocations: 1395)
+
+
+Started GET "/api/v1/sixhats?uid=112227920694984963764" for 172.18.0.1 at 2024-09-12 18:24:12 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  Parameters: {"uid"=>"112227920694984963764", "sixhat"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "112227920694984963764.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.1ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."uid" = $1[0m  [["uid", "112227920694984963764.0"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms | Allocations: 1395)
+
+
+Started POST "/auth/google/callback" for 172.18.0.4 at 2024-09-12 18:25:57 +0000
+Processing by Api::V1::UsersController#create as */*
+  Parameters: {"provider"=>"google", "uid"=>"102099541158899868378", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com", "user"=>{"uid"=>"102099541158899868378", "provider"=>"google", "name"=>"mimita puku", "email"=>"pukumimita0616@gmail.com"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."provider" = $1 AND "users"."uid" = $2 AND "users"."name" = $3 AND "users"."email" = $4 LIMIT $5[0m  [["provider", "google"], ["uid", "102099541158899868378.0"], ["name", "mimita puku"], ["email", "pukumimita0616@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/users_controller.rb:10:in `create'
+Completed 200 OK in 8ms (ActiveRecord: 0.3ms | Allocations: 740)
+
+
+Started GET "/api/v1/sixhats?uid=102099541158899868378" for 172.18.0.1 at 2024-09-12 18:25:59 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  Parameters: {"uid"=>"102099541158899868378", "sixhat"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "102099541158899868378.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."uid" = $1[0m  [["uid", "102099541158899868378.0"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1564)
+
+
+Started GET "/api/v1/sixhats?uid=102099541158899868378" for 172.18.0.1 at 2024-09-12 18:25:59 +0000
+Processing by Api::V1::SixhatsController#index as */*
+  Parameters: {"uid"=>"102099541158899868378", "sixhat"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "102099541158899868378.0"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:14:in `authenticate_request'
+  [1m[36mSixhat Load (0.2ms)[0m  [1m[34mSELECT "sixhats".* FROM "sixhats" WHERE "sixhats"."uid" = $1[0m  [["uid", "102099541158899868378.0"]]
+  ↳ app/controllers/api/v1/sixhats_controller.rb:9:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1563)
+
+
