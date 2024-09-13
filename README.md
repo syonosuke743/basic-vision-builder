@@ -30,7 +30,9 @@ https://www.idea-template-box.com
 
 ## インフラ構成図
 
-![AWSインフラ drawio](https://github.com/user-attachments/assets/b6c7d4de-cbd9-4ae2-b886-9a86eacd1335)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b6c7d4de-cbd9-4ae2-b886-9a86eacd1335" alt="AWSインフラ drawio">
+</p>
 
 
 ## 使用技術
