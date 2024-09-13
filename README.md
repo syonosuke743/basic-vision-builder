@@ -29,7 +29,8 @@ https://www.idea-template-box.com
 （ここにER図のリンクや画像を挿入してください。）
 
 ## インフラ構成図
-![image](https://github.com/user-attachments/assets/0e47fdb9-e958-4399-b724-5f5c2303379e)
+![image](https://github.com/user-attachments/assets/f31718e4-6201-4c5a-ab1f-6ad62f6487d2)
+
 
 ## 使用技術
 
