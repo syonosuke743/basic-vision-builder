@@ -7,7 +7,7 @@ module Api
 
       def create
         # 引数の条件に該当するデータがあればそれを返す。なければ新規作成する
-        user = User.find_or_create_by(provider: params[:provider], uid: params[:uid], name: params[:name], email: params[:email])                      
+        user = User.find_or_create_by(provider: params[:provider], uid: params[:uid], name: params[:name], email: params[:email])
         if user
           head :ok #status code 200を返す
         else

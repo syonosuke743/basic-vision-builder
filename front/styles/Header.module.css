@@ -28,6 +28,7 @@
 
 .choice_templates a {
   margin-right: 20px; /* リンク間のスペースを確保する */
+  border: none;
 }
 
 
