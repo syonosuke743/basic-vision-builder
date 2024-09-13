@@ -29,8 +29,8 @@ https://www.idea-template-box.com
 （ここにER図のリンクや画像を挿入してください。）
 
 ## インフラ構成図
-![image](https://github.com/user-attachments/assets/89d22af3-470d-493a-9c4f-f152c4adbcd1)
 
+![AWSインフラ drawio](https://github.com/user-attachments/assets/b6c7d4de-cbd9-4ae2-b886-9a86eacd1335)
 
 
 ## 使用技術
