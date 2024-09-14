@@ -22,11 +22,13 @@ https://www.idea-template-box.com
   
 - ユーザー登録・ログイン機能
 - テンプレートの作成
-- 履歴画面で編集、閲覧、削除
+- 履歴画面でテンプレートの編集、閲覧、削除
 
 ## ER図
-データベースの構造を視覚化したER図を載せます。  
-（ここにER図のリンクや画像を挿入してください。）
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/96af54e3-4326-4fc6-acd2-0323deef3536" alt="ER図 drawio">
+</p>
+
 
 ## インフラ構成図
 
