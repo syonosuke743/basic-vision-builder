@@ -22,7 +22,7 @@ https://www.idea-template-box.com
   
 - ユーザー登録・ログイン機能
 - テンプレートの作成
-- 履歴画面で編集、閲覧、削除
+- 履歴画面でテンプレートの編集、閲覧、削除
 
 ## ER図
 <p align="center">
