@@ -29,7 +29,7 @@ export const authOptions: NextAuthOptions = {
       const name = user?.name;
       const email = user?.email;
       try {
-        const response = await fetch(`${apiUrl}/auth/${provider}/callback`, {
+        const response = await fetch(`http://nginx/auth/${provider}/callback`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
@@ -48,6 +48,7 @@ export const authOptions: NextAuthOptions = {
           return false;
         }
       } catch (error) {
+        //ここでエラーハンドリングして画面遷移
         console.log("エラー", error);
         return false;
       }

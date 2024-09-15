@@ -32,6 +32,7 @@ const SixHat = () => {
 
 
     //console.log(theme, white, red, black, yellow, green, blue);
+    //thenの書き方にする↓
     try {
       await fetch(`${apiUrl}/api/v1/sixhats`, {
         method: 'POST',
